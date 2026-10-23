@@ -1,0 +1,13 @@
+{
+  "name": "php2shell-scanner-bun",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scan": "bun run scanner.ts",
+    "check": "bun build scanner.ts --target bun --outdir /tmp/php2shell-bun-check",
+    "test": "bun test"
+  },
+  "engines": {
+    "bun": ">=1.4.0"
+  }
+}
